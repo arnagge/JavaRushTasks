@@ -26,9 +26,6 @@ public class Position {
             throw new Exception("Coordinates are out of the GameBoard");
         }
 
-        System.out.println(x);
-        System.out.println(y);
-
         return new Position(x, y);
     }
 }
