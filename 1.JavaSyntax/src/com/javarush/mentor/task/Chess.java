@@ -14,6 +14,10 @@ public class Chess {
         Position startPoint = Position.convert(scanner.nextLine().toLowerCase());
         Position endPoint = Position.convert(scanner.nextLine().toLowerCase());
 
+        if (startPoint.x == endPoint.x && startPoint.y == endPoint.y) {
+            throw new Exception("Coordinates are equal!");
+        }
+
         List<String> figuresResult = new ArrayList<>();
         Figure[] figures = {
                 new King(),

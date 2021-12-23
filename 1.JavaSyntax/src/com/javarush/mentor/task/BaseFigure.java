@@ -19,7 +19,8 @@ public abstract class BaseFigure implements Figure {
 
         return possibleMoves;
     }
-@Override
+
+    @Override
     public boolean checkMove(Position start, Position destination) {
         for (Position position: this.getPossibleMoves(start)) {
             if (position.x == destination.x && position.y == destination.y) {
