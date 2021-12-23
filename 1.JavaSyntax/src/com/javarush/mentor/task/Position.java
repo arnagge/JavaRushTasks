@@ -16,8 +16,6 @@ public class Position {
 
             this.isInit = true;
         }
-//        System.out.println(this.x);
-//        System.out.println(this.y);
     }
 
     public static Position convert(String position) throws Exception {
